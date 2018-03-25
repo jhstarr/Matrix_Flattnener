@@ -5,7 +5,7 @@
 # flattened file with records of of "column heading" + " | " + "row label"
 # corresponding to the non-blank cells. 
 
-#------------Imports, initialization, and read the input_matrix----------
+#------------Import, initialize, and read the input_matrix----------
 
 import csv
 
@@ -48,8 +48,8 @@ def process_matrix(input_matrix_filename):
 
     # ---------Build the records of output_list-----------------
 
-    # Walk through the remaining core of the matrix.
-    # If item is blank, pass over.
+    # Walk through the remainder of the matrix which has been stripped of
+    # row and column headings.If an item is blank, pass over.
     # If the item is not blank create the record.
 
     r = 0

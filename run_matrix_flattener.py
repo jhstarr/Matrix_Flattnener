@@ -1,7 +1,8 @@
 # Jeff Starr, 20 December, 2017
 
-# This is a program that calls the matrix_flattener_function then 
-# writes the data returned into a file.
+# This is a program that passes an input matrix filename (as a string) 
+# to the matrix_flattener_function then writes the list returned 
+# by the function to a csv file.
 
 import csv
 import json
@@ -33,6 +34,7 @@ with open(output_list_filename, 'w', encoding='utf-8') as f_write:
 
 # The following writes the output_list as json to a file so that it can be
 # checked by a human then used for testing.
+# This approach does not test the csv file write.
 
 """
 output_json_filename = os.path.expanduser(
